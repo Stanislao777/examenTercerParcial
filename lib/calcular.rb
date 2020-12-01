@@ -8,6 +8,11 @@ class Calcular
         if cantidad_items == 3000
             return aplica_descuento(montoFinal, 0.05)
         end
+        
+        if cantidad_items == 7000
+            return aplica_descuento(montoFinal, 0.07)
+        end
+        
 
         return montoFinal
     end

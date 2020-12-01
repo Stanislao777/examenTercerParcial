@@ -11,8 +11,13 @@ RSpec.describe Calcular do
         expect(calcular.calcular_precio_final(1000, 50, 'UT')).to eq(48500)
     end
 
-    it 'dada cantidad 3000 itmes por un precio de 50 en UT debería retornar 142500' do
+    it 'dada cantidad 3000 items por un precio de 50 en UT debería retornar 142500' do
         calcular = Calcular.new
         expect(calcular.calcular_precio_final(3000, 50, 'UT')).to eq(142500)
+    end
+
+    it 'dada cantidad 7000 items por un precio de 50 en UT debería retornar 325500' do
+        calcular = Calcular.new
+        expect(calcular.calcular_precio_final(7000, 50, 'UT')).to eq(325500)
     end
 end
